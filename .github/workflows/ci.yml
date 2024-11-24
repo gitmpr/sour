@@ -103,6 +103,10 @@ jobs:
         run: |
           cd assets
           mkdir dist
+          
+          # show the version of golang for debugging
+          go version
+
           ./setup
 
       - name: Build desktop assets
